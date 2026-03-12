@@ -2,8 +2,8 @@
 #include "user/user.h"
 
 int
-main(void)
+main(int argc, char** argv)
 {
-    printf(1, "\033[2J\033[H");
-    exit();
+    printf("\x1b[H\x1b[J");
+    exit(0);
 }
